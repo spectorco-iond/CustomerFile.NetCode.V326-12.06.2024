@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A54A9C27-16E9-4767-B880-A345FF74B3F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CustomerFile.My.MyApplication</StartupObject>
+    <RootNamespace>CustomerFile</RootNamespace>
+    <AssemblyName>CustomerFile</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>M:\mcc\traveler executable\CustomerFile\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\cobalt5\macolaes\mcc\traveler executable\CustomerFile\</InstallUrl>
+    <UpdateUrl>\\cobalt5\macolaes\mcc\traveler executable\CustomerFile\</UpdateUrl>
+    <ProductName>Customer File</ProductName>
+    <PublisherName>Spector &amp; Co</PublisherName>
+    <MinimumRequiredVersion>1.0.0.133</MinimumRequiredVersion>
+    <ApplicationRevision>327</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CustomerFile.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CustomerFile.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>26E7FC93CB9307E60DF7B18D03C43FAD90C03AA4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CustomerFile_4_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CustomerFile_3_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Web" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BusinessLayer\cMdb_Cfg_Prod_Cat_BLL.vb" />
+    <Compile Include="BusinessLayer\cMdb_Customer_BLL.vb" />
+    <Compile Include="BusinessLayer\cMdb_Cus_Document_BLL.vb" />
+    <Compile Include="BusinessLayer\cMdb_Cus_Prog_BLL.vb" />
+    <Compile Include="BusinessLayer\cMDB_CUS_PROG_ITEM_COLOR_BLL.vb" />
+    <Compile Include="BusinessLayer\cMdb_Cus_Prog_Item_List_BLL.vb" />
+    <Compile Include="BusinessLayer\cMDB_CUS_PROG_ITEM_PRICE_BLL.vb" />
+    <Compile Include="BusinessLayer\cMdb_Cus_Prog_Rev_BLL.vb" />
+    <Compile Include="BusinessLayer\cMdb_Cus_Prog_Supp_Item_BLL.vb" />
+    <Compile Include="BusinessLayer\cOEPrcFil_Sql_BLL.vb" />
+    <Compile Include="cCicntp.vb" />
+    <Compile Include="cCicntp100ESE.vb" />
+    <Compile Include="cCustomer.vb" />
+    <Compile Include="cCustomerInfo.vb" />
+    <Compile Include="cDBA.vb" />
+    <Compile Include="cDBANTier.vb" />
+    <Compile Include="cDocument.vb" />
+    <Compile Include="cExact_Traveler_Communications.vb" />
+    <Compile Include="cEXACT_TRAVELER_DOCUMENT .vb" />
+    <Compile Include="cExact_Traveler_Email_Message.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallDetail.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallHeader.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallDetailType.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallUser.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallStatus.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallLevel.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallStatusl_DAL.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallTLevel_DAL.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallType.vb" />
+    <Compile Include="Complaint_Call\cComplaintCallType_DAL.vb" />
+    <Compile Include="Complaint_Call\cCOMPLAINT_CALL_DETAIL_FILE.vb" />
+    <Compile Include="Complaint_Call\cCOMPLAINT_CALL_DETAIL_FILE_DAL.vb" />
+    <Compile Include="Complaint_Call\FrmCallheadermaintenance.Designer.vb">
+      <DependentUpon>FrmCallheadermaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint_Call\FrmCallheadermaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complaint_Call\FrmUserMaintenace.Designer.vb">
+      <DependentUpon>FrmUserMaintenace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint_Call\FrmUserMaintenace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complaint_Call\FrmComplsint_call_main.Designer.vb">
+      <DependentUpon>FrmComplsint_call_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint_Call\FrmComplsint_call_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complaint_Call\MComplaintFunction.vb" />
+    <Compile Include="frmReportCriteria.Designer.vb">
+      <DependentUpon>frmReportCriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_item_substitute.Designer.vb">
+      <DependentUpon>Frm_item_substitute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_item_substitute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewExport\Convert_pdf\c_Excel_Function.vb" />
+    <Compile Include="NewExport\Convert_pdf\c_PDF.vb" />
+    <Compile Include="NewExport\global\gGlobal.vb" />
+    <Compile Include="NewExport\language culture\c_English.vb" />
+    <Compile Include="NewExport\language culture\c_Francais.vb" />
+    <Compile Include="NewExport\language culture\c_SwitchLang.vb" />
+    <Compile Include="NewExport\objects\cContentInfo.vb" />
+    <Compile Include="NewExport\objects\cHeaderInfo.vb" />
+    <Compile Include="Virtual_Request\frmOrigin.Designer.vb">
+      <DependentUpon>frmOrigin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual_Request\frmOrigin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\frmWebBrowser.Designer.vb">
+      <DependentUpon>frmWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual_Request\frmWebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\Objects\cMain\cReqDocBindItem.vb" />
+    <Compile Include="Virtual_Request\inherit\helpForm.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\cExact_Traveler_Permission.vb" />
+    <Compile Include="cHUMRES.VB" />
+    <Compile Include="cImage.vb" />
+    <Compile Include="cItem_Pictures.vb" />
+    <Compile Include="cMacolaOeprcfil_Sql.vb" />
+    <Compile Include="cMail.vb" />
+    <Compile Include="cMailAdviseWhiteGlove.vb" />
+    <Compile Include="cMailQuickP.vb" />
+    <Compile Include="cMdb_Cfg_Charge_Usage.vb" />
+    <Compile Include="cMdb_Cfg_Comm_Type.vb" />
+    <Compile Include="cMdb_Cfg_Message.vb" />
+    <Compile Include="cMdb_Cfg_Prod_Cat.vb" />
+    <Compile Include="cMdb_Cfg_Quote_Proc_User.vb" />
+    <Compile Include="cMdb_Cfg_Quote_Step.vb" />
+    <Compile Include="cMdb_Customer.vb" />
+    <Compile Include="cMdb_Cus_Comment.vb" />
+    <Compile Include="cMdb_Cus_Comm_Type.vb" />
+    <Compile Include="cMDB_CFG_DISRUPTION.vb" />
+    <Compile Include="cMDB_CUS_DOCUMENT.vb" />
+    <Compile Include="cMDB_CUS_FEEDBACK.vb" />
+    <Compile Include="cMdb_Cus_Prog.vb" />
+    <Compile Include="cMdb_Cus_Prog_Count.vb" />
+    <Compile Include="cMDB_CUS_PROG_ITEM_COLOR.vb" />
+    <Compile Include="cMdb_Cus_Prog_Item_List.vb" />
+    <Compile Include="cMDB_CUS_PROG_ITEM_PRICE.vb" />
+    <Compile Include="cMdb_Cus_Prog_Rev.vb" />
+    <Compile Include="cMdb_Cus_Prog_Supp_Item.vb" />
+    <Compile Include="cMdb_Cus_Push_Order.vb" />
+    <Compile Include="cMdb_Cus_Ship.vb" />
+    <Compile Include="cMdb_Log_Quote_Step.vb" />
+    <Compile Include="cMdb_Message_Desc.vb" />
+    <Compile Include="cMdb_Prog_Comment.vb" />
+    <Compile Include="cMDB_SYS_SCREEN.vb" />
+    <Compile Include="cMDB_SYS_SCREEN_FUNC_USER.vb" />
+    <Compile Include="cMDB_SYS_SCREEN_USER.vb" />
+    <Compile Include="cOEI_ORDHDR.vb" />
+    <Compile Include="cOutlookApp.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\cReqItems_AdditDetails.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\cRequestStatusT.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\cReqStatus.vb" />
+    <Compile Include="Virtual_Request\frmShowRequests.Designer.vb">
+      <DependentUpon>frmShowRequests.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual_Request\frmShowRequests.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\Objects\cMain\cRequests.vb" />
+    <Compile Include="CustomerFileSplash.Designer.vb">
+      <DependentUpon>CustomerFileSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFileSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customized Packaging\Forms_Pack\frmCreateMultiplePictureBox.Designer.vb">
+      <DependentUpon>frmCreateMultiplePictureBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customized Packaging\Forms_Pack\frmCreateMultiplePictureBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customized Packaging\Forms_Pack\frmItem_Picture.Designer.vb">
+      <DependentUpon>frmItem_Picture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customized Packaging\Forms_Pack\frmItem_Picture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customized Packaging\Objects_Pack\cItem_Picture_Pack.vb" />
+    <Compile Include="Customized Packaging\Objects_Pack\cMdb_Cus_Document_Pack.vb" />
+    <Compile Include="Customized Packaging\Objects_Pack\cMdb_Cus_Prog_Item_List_Pack.vb" />
+    <Compile Include="Customized Packaging\Objects_Pack\cMdb_Cus_Prog_Pack.vb" />
+    <Compile Include="Customized Packaging\Objects_Pack\cOeprcfil_sql_Pack.vb" />
+    <Compile Include="DataAccessLayer\cMdb_Cfg_Prod_Cat_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMdb_Customer_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMdb_Cus_Prog_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMDB_CUS_PROG_DAL_BACKUPNOTDELETE.vb" />
+    <Compile Include="DataAccessLayer\cMDB_CUS_PROG_ITEM_COLOR_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMdb_Cus_Prog_Item_List_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMDB_CUS_PROG_ITEM_PRICE_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMdb_Cus_Prog_Rev_DAL.vb" />
+    <Compile Include="DataAccessLayer\cMdb_Cus_Prog_Supp_Item_DAL.vb" />
+    <Compile Include="export excel\modExportToExcel.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommunication.Designer.vb">
+      <DependentUpon>frmCommunication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommunication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControlBoard.Designer.vb">
+      <DependentUpon>frmControlBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmControlBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerConfig.Designer.vb">
+      <DependentUpon>frmCustomerConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerContact.Designer.vb">
+      <DependentUpon>frmCustomerContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerContact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerHeader.Designer.vb">
+      <DependentUpon>frmCustomerHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerHeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerInfo.Designer.vb">
+      <DependentUpon>frmCustomerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer_Disruption.Designer.vb">
+      <DependentUpon>frmCustomer_Disruption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer_Disruption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocumentView.Designer.vb">
+      <DependentUpon>frmDocumentView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumentView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmail.Designer.vb">
+      <DependentUpon>frmEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailContacts.Designer.vb">
+      <DependentUpon>frmEmailContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailContacts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailQuickProgram.Designer.vb">
+      <DependentUpon>frmEmailQuickProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailQuickProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageGlobalOptions.Designer.vb">
+      <DependentUpon>frmManageGlobalOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageGlobalOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDB_CFG_CHARGE_USAGE.Designer.vb">
+      <DependentUpon>frmMDB_CFG_CHARGE_USAGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDB_CFG_CHARGE_USAGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMdb_Cus_Comment.Designer.vb">
+      <DependentUpon>frmMdb_Cus_Comment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMdb_Cus_Comment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDB_CUS_PROG_Mass_Add.Designer.vb">
+      <DependentUpon>frmMDB_CUS_PROG_Mass_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDB_CUS_PROG_Mass_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDB_CUS_SHIP.Designer.vb">
+      <DependentUpon>frmMDB_CUS_SHIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDB_CUS_SHIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.vb">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrders.Designer.vb">
+      <DependentUpon>frmOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutlookAppointment.Designer.vb">
+      <DependentUpon>frmOutlookAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutlookAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreviewDoc.Designer.vb">
+      <DependentUpon>frmPreviewDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreviewDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrograms.Designer.vb">
+      <DependentUpon>frmPrograms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrograms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProg_Item_Color.Designer.vb">
+      <DependentUpon>frmProg_Item_Color.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProg_Item_Color.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProg_Item_Price.Designer.vb">
+      <DependentUpon>frmProg_Item_Price.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProg_Item_Price.vb" />
+    <Compile Include="frmPushOrder.Designer.vb">
+      <DependentUpon>frmPushOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPushOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickProgram.Designer.vb">
+      <DependentUpon>frmQuickProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuickProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuotes.Designer.vb">
+      <DependentUpon>frmQuotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuoteSummary.Designer.vb">
+      <DependentUpon>frmQuoteSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuoteSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuote_Comments.Designer.vb">
+      <DependentUpon>frmQuote_Comments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuote_Comments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuote_Step_Request.Designer.vb">
+      <DependentUpon>frmQuote_Step_Request.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuote_Step_Request.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecialPricing.Designer.vb">
+      <DependentUpon>frmSpecialPricing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecialPricing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpectorControl.Designer.vb">
+      <DependentUpon>frmSpectorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpectorControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mGlobal.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SKU\frmAllsku.Designer.vb">
+      <DependentUpon>frmAllsku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SKU\frmAllsku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucCharges.Designer.vb">
+      <DependentUpon>ucCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucCharges.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucComm.Designer.vb">
+      <DependentUpon>ucComm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucComm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucComments.Designer.vb">
+      <DependentUpon>ucComments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucComments.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCommunications.Designer.vb">
+      <DependentUpon>ucCommunications.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommunications.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucContacts.Designer.vb">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDocument.Designer.vb">
+      <DependentUpon>ucDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucDocument.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDocument1.Designer.vb">
+      <DependentUpon>ucDocument1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucDocument1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEDIOrders.Designer.vb">
+      <DependentUpon>ucEDIOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucEDIOrders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOrders.Designer.vb">
+      <DependentUpon>ucOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucOrders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPriceLists.Designer.vb">
+      <DependentUpon>ucPriceLists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPriceLists.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProduction.Designer.vb">
+      <DependentUpon>ucProduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucProduction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPrograms.Designer.vb">
+      <DependentUpon>ucPrograms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPrograms.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuotes.Designer.vb">
+      <DependentUpon>ucQuotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuotes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucShipping.Designer.vb">
+      <DependentUpon>ucShipping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucShipping.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSpecialPricing.Designer.vb">
+      <DependentUpon>ucSpecialPricing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucSpecialPricing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\Objects\cCfgEnum.vb" />
+    <Compile Include="Virtual_Request\Objects\cCicmpy.vb" />
+    <Compile Include="Virtual_Request\Objects\cCicntpReq.vb" />
+    <Compile Include="Virtual_Request\Objects\cDgvControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\Objects\cLinkLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\Objects\cMain\cReqCommunication.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\CReqItems.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\cReq_Customer_Detail.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\cReqRevision.vb" />
+    <Compile Include="Virtual_Request\Objects\cMain\ReqSentMails.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Bus.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Cfg_Color_DAL.vb" />
+    <Compile Include="Virtual_Request\Objects\cMDB_CFG_DEC_MET.vb" />
+    <Compile Include="Virtual_Request\Objects\cMDB_CFG_IMP_LOC.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Cfg_Item_Doc_Type.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Item_Doc.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Item_Imp_Loc_View.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Item_VariantColor.vb" />
+    <Compile Include="Virtual_Request\Objects\cMdb_Item_Master.vb" />
+    <Compile Include="Virtual_Request\Objects\cRequest.vb" />
+    <Compile Include="Virtual_Request\frmVirtual_Request.Designer.vb">
+      <DependentUpon>frmVirtual_Request.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual_Request\frmVirtual_Request.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\Global\modCreateColumns.vb" />
+    <Compile Include="Virtual_Request\Global\modGlobal.vb" />
+    <Compile Include="Virtual_Request\Objects\cRequest_View.vb" />
+    <Compile Include="Virtual_Request\Objects\xCheckBox.designer.vb">
+      <DependentUpon>xCheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual_Request\Objects\xCheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Virtual_Request\UserControl\ucShowRequests.Designer.vb">
+      <DependentUpon>ucShowRequests.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual_Request\UserControl\ucShowRequests.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xTextBox.designer.vb">
+      <DependentUpon>xTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Complaint_Call\FrmCallheadermaintenance.resx">
+      <DependentUpon>FrmCallheadermaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complaint_Call\FrmUserMaintenace.resx">
+      <DependentUpon>FrmUserMaintenace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complaint_Call\FrmComplsint_call_main.resx">
+      <DependentUpon>FrmComplsint_call_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerFileSplash.resx">
+      <DependentUpon>CustomerFileSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customized Packaging\Forms_Pack\frmCreateMultiplePictureBox.resx">
+      <DependentUpon>frmCreateMultiplePictureBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customized Packaging\Forms_Pack\frmItem_Picture.resx">
+      <DependentUpon>frmItem_Picture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportCriteria.resx">
+      <DependentUpon>frmReportCriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_item_substitute.resx">
+      <DependentUpon>Frm_item_substitute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommunication.resx">
+      <DependentUpon>frmCommunication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlBoard.resx">
+      <DependentUpon>frmControlBoard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerConfig.resx">
+      <DependentUpon>frmCustomerConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerContact.resx">
+      <DependentUpon>frmCustomerContact.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerHeader.resx">
+      <DependentUpon>frmCustomerHeader.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerInfo.resx">
+      <DependentUpon>frmCustomerInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer_Disruption.resx">
+      <DependentUpon>frmCustomer_Disruption.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocumentView.resx">
+      <DependentUpon>frmDocumentView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmail.resx">
+      <DependentUpon>frmEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailContacts.resx">
+      <DependentUpon>frmEmailContacts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailQuickProgram.resx">
+      <DependentUpon>frmEmailQuickProgram.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageGlobalOptions.resx">
+      <DependentUpon>frmManageGlobalOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDB_CFG_CHARGE_USAGE.resx">
+      <DependentUpon>frmMDB_CFG_CHARGE_USAGE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMdb_Cus_Comment.resx">
+      <DependentUpon>frmMdb_Cus_Comment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDB_CUS_PROG_Mass_Add.resx">
+      <DependentUpon>frmMDB_CUS_PROG_Mass_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDB_CUS_SHIP.resx">
+      <DependentUpon>frmMDB_CUS_SHIP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrders.resx">
+      <DependentUpon>frmOrders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutlookAppointment.resx">
+      <DependentUpon>frmOutlookAppointment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreviewDoc.resx">
+      <DependentUpon>frmPreviewDoc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrograms.resx">
+      <DependentUpon>frmPrograms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProg_Item_Color.resx">
+      <DependentUpon>frmProg_Item_Color.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProg_Item_Price.resx">
+      <DependentUpon>frmProg_Item_Price.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPushOrder.resx">
+      <DependentUpon>frmPushOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickProgram.resx">
+      <DependentUpon>frmQuickProgram.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuotes.resx">
+      <DependentUpon>frmQuotes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuoteSummary.resx">
+      <DependentUpon>frmQuoteSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuote_Comments.resx">
+      <DependentUpon>frmQuote_Comments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuote_Step_Request.resx">
+      <DependentUpon>frmQuote_Step_Request.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpecialPricing.resx">
+      <DependentUpon>frmSpecialPricing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpectorControl.resx">
+      <DependentUpon>frmSpectorControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SKU\frmAllsku.resx">
+      <DependentUpon>frmAllsku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCharges.resx">
+      <DependentUpon>ucCharges.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucComm.resx">
+      <DependentUpon>ucComm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucComments.resx">
+      <DependentUpon>ucComments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCommunications.resx">
+      <DependentUpon>ucCommunications.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContacts.resx">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDocument.resx">
+      <DependentUpon>ucDocument.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDocument1.resx">
+      <DependentUpon>ucDocument1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEDIOrders.resx">
+      <DependentUpon>ucEDIOrders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOrders.resx">
+      <DependentUpon>ucOrders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPriceLists.resx">
+      <DependentUpon>ucPriceLists.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProduction.resx">
+      <DependentUpon>ucProduction.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPrograms.resx">
+      <DependentUpon>ucPrograms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuotes.resx">
+      <DependentUpon>ucQuotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucShipping.resx">
+      <DependentUpon>ucShipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSpecialPricing.resx">
+      <DependentUpon>ucSpecialPricing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual_Request\frmOrigin.resx">
+      <DependentUpon>frmOrigin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual_Request\frmShowRequests.resx">
+      <DependentUpon>frmShowRequests.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual_Request\frmVirtual_Request.resx">
+      <DependentUpon>frmVirtual_Request.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual_Request\frmWebBrowser.resx">
+      <DependentUpon>frmWebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual_Request\UserControl\ucShowRequests.resx">
+      <DependentUpon>ucShowRequests.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xTextBox.resx">
+      <DependentUpon>xTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="CustomerFile_1_TemporaryKey.pfx" />
+    <None Include="CustomerFile_2_TemporaryKey.pfx" />
+    <None Include="CustomerFile_3_TemporaryKey.pfx" />
+    <None Include="CustomerFile_4_TemporaryKey.pfx" />
+    <None Include="CustomerFile_TemporaryKey.pfx" />
+    <None Include="CustomerKey.pfx" />
+    <None Include="Customer_File_Key_iond.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Virtual_Request\Objects\cMain.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="favicon_1.ico" />
+    <None Include="Resources\milker-X-icon-300px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{EF53050B-882E-4776-B643-EDA472E8E3F2}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Complaint_Call\BusinessLayer\" />
+    <Folder Include="Complaint_Call\DataAccessLayer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

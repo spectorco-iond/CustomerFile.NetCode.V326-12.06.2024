@@ -1,0 +1,169 @@
+
+
+
+
+*******************
+*****30.03.2016****
+*******************
+
+Button export in excel from the Program dgv.
+Only for me and Pamela Breton
+ 
+
+*******************
+*****09.12.2015****
+*******************
+
+Add input for custom items
+Price for boxes was missing
+All pricing needs to be at EQP
+Print screen/save function
+
+
+*******************
+*****18.09.2015****
+*******************
+double Appointment in the Outlook.
+*******************
+*****20.07.2015****
+*******************
+
+Added Version and date of the program.
+(in frmCustomerHeader,frmCustomer)
+
+*******************
+*****17.07.2015****
+*******************
+1.	Project Customized Packaging inside CS.
+2.	Tab Quote you can find  the quotes which are lost because it not have the items in the inside of the quote.
+3.	Copy/Paste  ability in the CS - of the Items in the ( Quotes, Programs, Special Pricing )(click right on the  item line)
+4.	 In the Cutomer Header : Correction in the display of the Marketing Allowance.
+
+
+
+*******************
+*****25.06.2015****
+*******************
+ In the Qoute: when you choose -Option Pendind- you must add comment. Why is pending?
+ In the Program: you can change price manual, unless you don't click in the cell (Color,EQP) .
+
+*******************
+*****10.06.2015****
+*******************
+
+1. The order of comments in the PDF of Quotes
+     -Other Comments
+     -General and Pricing
+    -Shipping / samples /approvals
+    -Production (I know like Production it must be above Shipping but are the reasons)
+
+2.(for Programs, Special Pricing and Quotes) Validation  of  Item Code, if you add one line, you can’t have access for other things, 
+    only if you fill Item Cd or click Delete line.
+
+
+*******************
+*****03.06.2015****
+*******************
+add buttom (Update Dt) in the Manage Option for change or renew the date for the new year
+and I fixed and change some problems with date.   
+
+ this update is more for Josie.
+
+********************
+*****23.05.2015*****
+********************
+Updates in  CS :
+
+-	Customer Header 
+? All-in-One  (Option)
+Displayed checkbox  ‘Always’ , if is checked = it must  Always execute this charge for this client
+
+-	Program Maintenance
+? End Date = 01/31/20..
+               ? Option Charge display  all charge unless all-in-one (Always) because it is already exists for this client  .
+                ? In the grid create New Items, after you chose color of items in the price cell, the price appears.
+                ? EQP Cell  = checked,  now is for enable  the cell of EQP DISC %  and you can enter the discount and the price it will change.
+                ? Now you will see before all prices after you can click Export, if all is correct.
+
+-	Quote Maintenace
+? Same principle as above, unless  is not EQP …
+                  The price of item  depend of property of the client (if is EQP Client the price is most small ) or is not EQP client it depend of minimum quantity).
+
+-	Special Pricing Maintenace
+        ? Same principle as above, unless  is not EQP …
+           The price of item  depend of property of the client (if is EQP Client the price is most small ) or is not EQP client it depend of minimum quantity).
+
+
+
+
+
+*********************
+*****13.05.2015******
+*********************
+
+In White Glove ( Order Qty)  is removed ( put in visible = false ). 
+And,
+Button New In Option is removed also, because is not used or is not usable (put in visible = false).
+
+
+*********************
+*****06.05.2015******
+*********************
+
+in the frmQuickProgram
+- un nouveau review = nouveau start date et end date
+- si on veut pas faire un review mais on a besoin de change ou ajoute dans le list
+CreateRevision --> No --> et la revision rest la meme sauf que la step - 1
+ - la end date pour Special Pricing and Program change a (3 mois) 
+-dans le frmCustomerHeader grid Option change
+- dans le ucCharge on a ajoute button Manage Global Option (avec le permission specific)
+-nouveau form on a ajoute frmManageGlobalOptions pour gère tout les charges globale de client
+- On a enleve l'affichage de Marc et Hillel dans le form frmQuote_Step_Request (SCREEN_USER not in ('MARCB','HILLEL'))
+
+
+*******************
+****09.03.2015*****
+*******************
+in cMdb_Cus_Prog_BLL.vb
+++ID 9.3.15 
+  If arrDocId IsNot Nothing
+
+30.03.2015
+New Update for Customer file in the Quote maintenance screen.
+
+ Added:
+ -Quote Status
+ -Quote Result - if the quote is closed 
+                 - a textBox appears. Why order closed? you must explain
+				 
+Other:
+-Follow up date (create a reminder in Outlook): Outlook must be open to use this function.
+
+By default, the follow up date will a fixed 2 days from present.
+If you click on this label(-Follow up date-), a new form will open to make an appointment.
+After Saving the Quote, the appointment is created inside your Outlook.
+
+
+Other:
+
+New function: You can send an email to the client, using the button -Send Email to the Client-
+You can attach a file; by default, it will take the latest document from Quote Documents. 
+
+You can attach any document you want, even if it is not on the quote documents list.
+	
+----------------------------------------
+1.04.2015
+
+Latest update in the Customer file in the Quote
+
+-Each repeat appointment in Outlook is deleted, if you save more times.
+
+-in Email  form you can attach more documents
+
+- also In Email form you can delete attached document, with mouse button right or in the keyboard button DELETE,
+(all right before it must select line for delete)
+
+-also In Email form added the button for CC…  address
+
+
+		 
