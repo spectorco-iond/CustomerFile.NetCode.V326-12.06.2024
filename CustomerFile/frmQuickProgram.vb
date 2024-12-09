@@ -277,8 +277,8 @@ Public Class frmQuickProgram
         Me.Cursor = System.Windows.Forms.Cursors.WaitCursor
 
         Try
-           '++ID12092024 new Test modifcation
-           'lines added for to keep version for Git Hub
+        
+           '++ID12092024 new Test modifcation lines added for to keep version for Git Hub
             MsgBox(" Test for Git Hub. ")
 
             AddHandler bw.DoWork, AddressOf bw_DoWork
