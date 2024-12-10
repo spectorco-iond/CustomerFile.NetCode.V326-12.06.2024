@@ -282,6 +282,8 @@ Public Class frmQuickProgram
             MsgBox(" Test for Git Hub. Try  to display the message box as was added . ")
             MsgBox("  Git Hub. Waiting to see this message !!! ")
 
+            MsgBox("Steven  Git Hub. Waiting to see this message !!! ")
+
             AddHandler bw.DoWork, AddressOf bw_DoWork
             AddHandler bw.RunWorkerCompleted, AddressOf bw_RunWorkerCompleted
 
